@@ -5,7 +5,7 @@ $(document).ready(function () {
   myGame.startGame();
 
   $('button').click(function () {
-    var colorInput   = $(this).attr("id");
+    var colorInput   = $(this).attr("class");
     var currentColor = myGame.sequence[myGame.userClickCount];
 
     if (currentColor !== colorInput) {

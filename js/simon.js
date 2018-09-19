@@ -19,20 +19,20 @@ SimonGame.prototype.showSequence = function() {
   var i = 0;
   var ourSequence = this.sequence;
 
-   $("#buttons-container").addClass("blocked");
+   $(".buttons-container").addClass("blocked");
 
   var interval = setInterval(function() {
     if (!ourSequence[i]) {
       $("button").removeClass("active");
       clearInterval(interval);
-      $("#buttons-container").removeClass("blocked");
+      $(".buttons-container").removeClass("buttons-container-blocked");
       return;
     }
 
-    $("#" + ourSequence[i]).addClass("active");
+    $("." + ourSequence[i]).addClass("buttons-container-active");
 
     setTimeout(function() {
-      $("button").removeClass("active");
+      $("button").removeClass("buttons-container-active");
     }, 700);
 
     i += 1;
@@ -45,7 +45,7 @@ SimonGame.prototype.nextRound = function () {
   this.showSequence();
   this.userClickCount = 0;
   this.round += 1;
-  $("#counter").html(this.round);
+  $(".buttons-container__counter").html(this.round);
 };
 
 SimonGame.prototype.gameOver = function () {
@@ -53,6 +53,6 @@ SimonGame.prototype.gameOver = function () {
   this.sequence = [];
   this.userClickCount = 0;
   this.round = 1;
-  $("#counter").html("1");
+  $(".buttons-container__counter").html("1");
 
   this.startGame(); }

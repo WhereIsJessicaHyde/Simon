@@ -1,0 +1,77 @@
+//le damos estilo a los bontones
+button
+  border: 10px solid #000
+  cursor: pointer
+  height: 300px
+  margin: 0 -2px
+  outline: none
+  padding: 0
+  width: 300px
+
+//Juntamos todas los botones
+section
+  margin: 0 auto
+  position: relative
+  width: 620px
+
+.buttons-container
+  .buttons-container-blocked
+    button
+      pointer-events: none
+
+  &__green
+    border-top-left-radius: 100%
+    background: $primary-green-color
+
+  &__red
+    border-top-right-radius: 100%
+    background: $primary-red-color
+
+  &__yellow
+    border-bottom-left-radius: 100%
+    background: $primary-yellow-color
+
+  &__blue
+    border-bottom-right-radius: 100%
+    background: $primary-blue-color
+
+  // Vamos a crear un efecto de desplazamiento que establecerá
+  // el color de fondo con una opacidad del 100% */
+
+  &__red.buttons-container-active,
+  &__red:hover
+      background: $secundary-red-color
+
+  &__green.buttons-container-active,
+  &__green:hover
+    background: $secundary-green-color
+
+  &__yellow.buttons-container-active,
+  &__yellow:hover
+    background: $secundary-yellow-color
+
+  &__blue.buttons-container-active,
+  &__blue:hover
+    background: $secundary-blue-color
+
+// haremos un estilo del contador y lo colocaremos en el medio
+// de los botones.
+
+.buttons-container__counter
+  background: #000
+  border-radius: 50%
+  box-sizing: border-box
+  color: #fff
+  font:
+    family: Arial
+    size: 100px
+  left: 50%
+  line-height: 200px
+  height: 200px
+  margin:
+    top: -100px
+    left: -108px
+  position: absolute
+  text-align: center
+  top: 50%
+  width: 200px
