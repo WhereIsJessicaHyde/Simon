@@ -12,36 +12,31 @@ section {
   position: relative;
   width: 620px; }
 
-.buttons-container .buttons-container-blocked button {
-  pointer-events: none; }
-
-.buttons-container__green {
-  border-top-left-radius: 100%;
-  background: rgba(35, 200, 82, 0.4); }
-
-.buttons-container__red {
-  border-top-right-radius: 100%;
-  background: rgba(254, 35, 34, 0.4); }
-
-.buttons-container__yellow {
-  border-bottom-left-radius: 100%;
-  background: rgba(243, 194, 16, 0.4); }
-
-.buttons-container__blue {
-  border-bottom-right-radius: 100%;
-  background: rgba(0, 103, 208, 0.4); }
-
-.buttons-container__red.buttons-container-active, .buttons-container__red:hover {
-  background: #fe2322; }
-
-.buttons-container__green.buttons-container-active, .buttons-container__green:hover {
-  background: #23c852; }
-
-.buttons-container__yellow.buttons-container-active, .buttons-container__yellow:hover {
-  background: #f3c210; }
-
-.buttons-container__blue.buttons-container-active, .buttons-container__blue:hover {
-  background: #0067d0; }
+.buttons-container {
+  margin-bottom: 100px;
+  margin-left: 50px; }
+  .buttons-container .buttons-container-blocked button {
+    pointer-events: none; }
+  .buttons-container__green {
+    border-top-left-radius: 100%;
+    background: rgba(35, 200, 82, 0.4); }
+  .buttons-container__red {
+    border-top-right-radius: 100%;
+    background: rgba(254, 35, 34, 0.4); }
+  .buttons-container__yellow {
+    border-bottom-left-radius: 100%;
+    background: rgba(243, 194, 16, 0.4); }
+  .buttons-container__blue {
+    border-bottom-right-radius: 100%;
+    background: rgba(0, 103, 208, 0.4); }
+  .buttons-container__red.buttons-container-active, .buttons-container__red:hover {
+    background: #fe2322; }
+  .buttons-container__green.buttons-container-active, .buttons-container__green:hover {
+    background: #23c852; }
+  .buttons-container__yellow.buttons-container-active, .buttons-container__yellow:hover {
+    background: #f3c210; }
+  .buttons-container__blue.buttons-container-active, .buttons-container__blue:hover {
+    background: #0067d0; }
 
 .buttons-container__counter {
   background: #000;
@@ -61,12 +56,22 @@ section {
   width: 200px; }
 
 body {
-  font-family: Montserrat; }
+  font-family: Montserrat, Arial, helvetica, Sanf-serif; }
+
+.wrapper {
+  border: solid 10px black;
+    border-radius: 10px;
+  height: 850px;
+  width: 700px;
+  margin: 100px auto;
+  box-shadow: 0 5px 10px gray; }
 
 header {
   text-align: center;
-  margin-top: 100px;
+  margin-top: 10px;
   margin-bottom: 50px; }
 
 h1 {
+  margin: 0;
+  padding: 0;
   font-size: 100px; }
